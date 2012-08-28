@@ -17,7 +17,7 @@
 googletag.cmd.push(function() {
   googletag.defineSlot('/12709297/Gamezone_Tablet', [300, 250], 'div-gpt-ad-1346093693057-0').addService(googletag.pubads());
   googletag.defineSlot('/12709297/Gamezone_Tablet', [300, 250], 'div-gpt-ad-1346093693057-1').addService(googletag.pubads());
-  googletag.pubads().enableSingleRequest();
+  //googletag.pubads().enableSingleRequest();
   googletag.enableServices();
 });
 
@@ -32,6 +32,7 @@ googletag.cmd.push(function() {
 });
 
 setTimeout(function() {
+  console.log('yay!');
   googletag.cmd.push(function() { 
     googletag.display('div-gpt-ad-1346093693057-1')
   });
