@@ -31,9 +31,11 @@ googletag.cmd.push(function() {
   googletag.display('div-gpt-ad-1346093693057-0')
 });
 
-googletag.cmd.push(function() { 
-  googletag.display('div-gpt-ad-1346093693057-1')
-});
+setTimeout(function() {
+  googletag.cmd.push(function() { 
+    googletag.display('div-gpt-ad-1346093693057-1')
+  });
+}, 2000);
 </script>
 </head>
 <body>
