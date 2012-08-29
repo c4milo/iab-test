@@ -5,15 +5,7 @@
 <title>Widgets Magazine</title> 
 <style type="text/css" media="screen"> 
 </style>
-<script type='text/javascript'>
-(function() {
-  var useSSL = 'https:' == document.location.protocol;
-  var src = (useSSL ? 'https:' : 'http:') +
-  '//www.googletagservices.com/tag/js/gpt_mobile.js';
-  document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-})();
-</script>
-<script type='text/javascript'>
+<script type='text/javascript' src='http://www.googletagservices.com/tag/js/gpt_mobile.js'>
 googletag.cmd.push(function() {
   ///googletag.defineSlot('/12709297/Gamezone_Tablet', [300, 250], 'div-gpt-ad-1346093693057-0').addService(googletag.pubads());
   //googletag.defineSlot('/12709297/Gamezone_Tablet', [300, 250], 'div-gpt-ad-1346093693057-1').addService(googletag.pubads());
@@ -21,6 +13,7 @@ googletag.cmd.push(function() {
   googletag.defineSlot('/12709297/FlavorWire_Tablet', [300, 250], 'div-gpt-ad-1346093693057-0').addService(googletag.pubads());
   googletag.defineSlot('/12709297/FlavorWire_Tablet', [300, 250], 'div-gpt-ad-1346093693057-1').addService(googletag.pubads());
   //googletag.pubads().enableSingleRequest();
+  googletag.pubads().enableAsyncRendering();
   googletag.enableServices();
 });
 
