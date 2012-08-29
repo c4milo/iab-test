@@ -15,7 +15,7 @@ googletag.cmd.push(function() {
   googletag.defineSlot('/12709297/FlavorWire_Tablet', [300, 250], 'div-gpt-ad-1346093693057-0').addService(pubService);
   googletag.defineSlot('/12709297/FlavorWire_Tablet', [300, 250], 'div-gpt-ad-1346093693057-1').addService(pubService);
   //googletag.pubads().enableSingleRequest();
-  pubService.enableAsyncRendering();
+  //pubService.enableAsyncRendering();
   //pubService.enableAsyncSingleRequest();
   googletag.enableServices();
 });
@@ -26,22 +26,32 @@ googletag.cmd.push(function() {
  * where the ad is going to be loaded only if we are 
  * loading them synchronuosly.
  **/
-googletag.cmd.push(function() { 
+/*googletag.cmd.push(function() { 
   googletag.display('div-gpt-ad-1346093693057-0')
-});
+});*/
 
 //setTimeout(function() {
   //console.log('yay!');
-googletag.cmd.push(function() { 
+/*googletag.cmd.push(function() { 
   googletag.display('div-gpt-ad-1346093693057-1')
-});
+});*/
 //}, 2000);
 </script>
 </head>
 <body>
 <!-- Gamezone_Tablet -->
 <div id='div-gpt-ad-1346093693057-0'>
+ <script type="text/javascript">
+googletag.cmd.push(function() { 
+  googletag.display('div-gpt-ad-1346093693057-0')
+});
+ </script>
 </div>
 <div id='div-gpt-ad-1346093693057-1'>
+  <script type="text/javascript">
+googletag.cmd.push(function() { 
+  googletag.display('div-gpt-ad-1346093693057-1')
+});
+  </script>
 </div>
 </body>
