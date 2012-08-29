@@ -28,22 +28,24 @@ googletag.cmd.push(function() {
  * where the ad is going to be loaded only if we are 
  * loading them synchronuosly.
  **/
-googletag.cmd.push(function() { 
-  googletag.display('div-gpt-ad-1346093693057-0')
-});
+
 
 //setTimeout(function() {
   //console.log('yay!');
-  googletag.cmd.push(function() { 
-    googletag.display('div-gpt-ad-1346093693057-1')
-  });
+  
 //}, 2000);
 </script>
 </head>
 <body>
 <!-- Gamezone_Tablet -->
 <div id='div-gpt-ad-1346093693057-0'>
+  googletag.cmd.push(function() { 
+    googletag.display('div-gpt-ad-1346093693057-0')
+  });
 </div>
 <div id='div-gpt-ad-1346093693057-1'>
+  googletag.cmd.push(function() { 
+    googletag.display('div-gpt-ad-1346093693057-1')
+  });
 </div>
 </body>
