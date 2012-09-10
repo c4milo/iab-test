@@ -1,0 +1,23 @@
+{
+    "name": "iab-test",
+    "description": "IAB ads tester",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://github.com/c4milo/iab-test",
+    "author": "Camilo Aguilar <camilo@onswipe.com> (http://github.com/c4milo)",
+    "repository": "git://github.com/c4milo/iab-test",
+    "engines": {
+      "node": ">=0.6.x"
+    },
+    "devDependencies": {
+      "jshint": "0.8.0"
+    },
+    "dependencies": {
+      "express": "2.5.11",
+      "qrcode": "0.2.2",
+      "jade": "0.27.2",
+      "nodemailer": "0.3.26",
+      "stylus": "0.29.0",
+      "grunt": "0.3.15"
+    }
+}
