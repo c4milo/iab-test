@@ -31,12 +31,12 @@ function google_ad_request_done(google_ads) {
     var ad = google_ads[i];
 
     if (ad.type == 'text') {
-        tpl = tpl.replace('__LINE1__', ad.line1);
-        tpl = tpl.replace('__LINE2__', ad.line2);
-        tpl = tpl.replace('__LINE3__', ad.line3);
-        tpl = tpl.replace('__URL__', ad.url);
-        tpl = tpl.replace('__VISIBLE_URL__', ad.visible_url);
-        document.write(tpl);
+      tpl = tpl.replace('__LINE1__', ad.line1);
+      tpl = tpl.replace('__LINE2__', ad.line2);
+      tpl = tpl.replace('__LINE3__', ad.line3);
+      tpl = tpl.replace('__URL__', ad.url);
+      tpl = tpl.replace('__VISIBLE_URL__', ad.visible_url);
+      document.write(tpl);
     } else if (ad.type == 'image') {
       document.write('<a href="' + ad.url + '" target="_blank">' +
                 '<img src="' + ad.image_url + '" ' +
