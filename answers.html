@@ -65,3 +65,73 @@ google_page_url = onswipe_google_page_url;
 </script>
 <script type='text/javascript' src='http://pagead2.googlesyndication.com/pagead/show_ads.js'></script>
 
+<!------------- 728x90 ----------->
+
+<script type='text/javascript'>
+
+function google_ad_request_done(google_ads) { 
+  /*
+  * This function is required and is used to display 
+  * the ads that are returned from the JavaScript 
+  * request. You should modify the document.write 
+  * commands so that the HTML they write out fits 
+  * with your desired ad layout.
+  */
+  if (!google_ads || !google_ads.length) {
+    return;
+  }
+
+  //console.log(google_ads);
+  var tpl = '' +
+    '<style>' +
+      '@import url("http://assets.onswipe.com/ads/answers/ad_style.min.css");' +
+    '</style>' +
+    '<a class="ad-728x90" href="__URL__" target="_blank">' +
+     '<button>' +
+       '<img src="http://pagead2.googlesyndication.com/pagead/images/mobile_unified_button_icon_white.png">' +
+     '</button>' +
+    '<strong>__LINE1__</strong>' +
+    '<p>__LINE2__</p>' +
+    '<p>__LINE3__</p>' +
+    '<span>__VISIBLE_URL__</span>' +
+    '</a>';
+
+  for (var i = 0, len = google_ads.length; i < len; i++) {
+    var ad = google_ads[i];
+
+    if (ad.type == 'text') {
+        tpl = tpl.replace('__LINE1__', ad.line1);
+        tpl = tpl.replace('__LINE2__', ad.line2);
+        tpl = tpl.replace('__LINE3__', ad.line3);
+        tpl = tpl.replace('__URL__', ad.url);
+        tpl = tpl.replace('__VISIBLE_URL__', ad.visible_url);
+        document.write(tpl);
+    } else if (ad.type == 'image') {
+      document.write('<a href="' + ad.url + '" target="_blank">' +
+                '<img src="' + ad.image_url + '" ' +
+                'height="' + ad.image_height+ '" width="' + ad.image_width + '" ' +
+                '"></img></a>');
+    }
+  }
+  return;
+}
+
+google_ad_client = 'ca-gurunet-mobile';
+google_ad_section = 'default';
+google_ad_output = 'js';
+google_image_size = '728x90';
+
+//IMPORTANT, remove when moving to production
+//google_adtest = 'on';
+google_max_num_ads = 1;
+google_ad_type = 'text,image';
+google_language = 'en';
+google_encoding = 'utf8';
+google_safe = 'medium';
+google_ad_channel = 'AQ_11';
+google_hints = "";
+google_page_url = onswipe_google_page_url;
+</script>
+<script type='text/javascript' src='http://pagead2.googlesyndication.com/pagead/show_ads.js'></script>
+
+
