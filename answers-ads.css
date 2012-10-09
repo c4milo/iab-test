@@ -1,12 +1,23 @@
   a {
     text-decoration: none;
     font-family: verdana, arial, sans-serif;
+    padding: 7px 0;
+    display: block;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
   }
+
+a.ad-728x90 {
+  width: 728px;
+  height: 90px;
+}
  a strong {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.2;
-  color: #003399;
+  color: blue;
   display: block;
   text-decoration: underline;
  }
@@ -16,6 +27,15 @@
   line-height: 1.2;
   margin: 3px 0;
  }
+
+a p.small-text {
+  color: #9A9A9A;
+  font-size: 11px;
+  line-height: 11px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
 
  .ad-728x90 p {
     display: inline;
@@ -28,6 +48,7 @@
   overflow: hidden;
   text-decoration: underline;
   display: block;
+  margin-top: 7px;
  }
 
  a button {
@@ -47,7 +68,7 @@
 
   .ad-728x90 button {
     float: right;
-    margin: 10px 10px 0 30px;
+    margin: 10px 0 0 30px;
   }
 
  a button img {
