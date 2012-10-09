@@ -16,6 +16,7 @@ function google_ad_request_done(google_ads) {
   var tpl = '' +
     '<style>' +
       '@import url("http://assets.onswipe.com/ads/answers/ad_style.min.css");' +
+      // '@import url("answers-ads.css");' +
     '</style>' +
     '<a href="__URL__" target="_blank">' +
     '<strong>__LINE1__</strong>' +
@@ -66,16 +67,16 @@ google_page_url = onswipe_google_page_url;
 </script>
 <script type='text/javascript' src='http://pagead2.googlesyndication.com/pagead/show_ads.js'></script>
 
-<!------------- 728x90 ----------->
+<!-- 728x90 -->
 
 <script type='text/javascript'>
 
-function google_ad_request_done(google_ads) { 
+function google_ad_request_done(google_ads) {
   /*
-  * This function is required and is used to display 
-  * the ads that are returned from the JavaScript 
-  * request. You should modify the document.write 
-  * commands so that the HTML they write out fits 
+  * This function is required and is used to display
+  * the ads that are returned from the JavaScript
+  * request. You should modify the document.write
+  * commands so that the HTML they write out fits
   * with your desired ad layout.
   */
   if (!google_ads || !google_ads.length) {
@@ -86,6 +87,7 @@ function google_ad_request_done(google_ads) {
   var tpl = '' +
     '<style>' +
       '@import url("http://assets.onswipe.com/ads/answers/ad_style.min.css");' +
+      // '@import url("answers-ads.css");' +
     '</style>' +
     '<a class="ad-728x90" href="__URL__" target="_blank">' +
      '<button>' +
@@ -95,6 +97,7 @@ function google_ad_request_done(google_ads) {
     '<p>__LINE2__</p>' +
     '<p>__LINE3__</p>' +
     '<span>__VISIBLE_URL__</span>' +
+    '<p class="small-text">Ads</p>' +
     '</a>';
 
   for (var i = 0, len = google_ads.length; i < len; i++) {
