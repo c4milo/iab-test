@@ -1,15 +1,16 @@
-(function($, window, caja) {
-  caja.initialize({
-    cajaServer: 'https://caja.appspot.com/',
-    debug: true
-  });
-  
+$(function() {
   function onChange(instance) {
     $('#preview > *').remove();
-    caja.load(window.document.getElementById('preview'), undefined, function(frame) {
-      frame.code(null, 'text/html', instance.getValue()).run();
-    });
-    //$('#preview').contents().html(instance.getValue());
+
+    var iframe = $('<iframe/>', {
+      id: 'sandbox',
+      src: '',
+      url: 'about:blank
+    }).appendTo('#preview');
+
+    var sandbox = iframe[0].contentWindow.document;
+    sandbox.write(instance.getValue());
+    sandbox.close();
   }
 
   var editor = CodeMirror(document.getElementById('editor'), {
@@ -20,4 +21,4 @@
   });
 
   editor.setSize(null, '900');
-})(jQuery, window, caja);
+});

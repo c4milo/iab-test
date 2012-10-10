@@ -3,6 +3,12 @@
 }
 
 #qrcode {
-  background-color: green;
+  background-color: #BBD8E9;
   height: 200px;
+}
+
+#sandbox {
+  border: none;
+  height: 100%;
+  width: 100%;
 }
