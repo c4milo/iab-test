@@ -1,57 +1,37 @@
-  a {
+div {
     text-decoration: none;
     font-family: verdana, arial, sans-serif;
-    padding: 7px 0;
-    display: block;
-    width: 300px;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
   }
 
-a.ad-728x90 {
-  width: 728px;
-  height: 90px;
-}
- a strong {
+div strong a {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.2;
-  color: blue;
-  display: block;
+  color: #003399;
   text-decoration: underline;
  }
- a p {
+
+ div p {
   color: #000000;
   font-size: 15px;
   line-height: 1.2;
   margin: 3px 0;
  }
 
-a p.small-text {
-  color: #9A9A9A;
-  font-size: 11px;
-  line-height: 11px;
-  position: absolute;
-  top: 0;
-  right: 30px;
-}
-
- .ad-728x90 p {
-    display: inline;
+ div.ad-728x90 {
+    width: 728px;
+    height: 90px;
   }
 
- a span {
+ div span a {
   color: #008000;
   font-size: 15px;
   line-height: 1.2;
   overflow: hidden;
   text-decoration: underline;
-  display: block;
-  margin-top: 7px;
  }
 
- a button {
+ div .button {
   background: #26D;
   background-image: -webkit-gradient(linear,left top,left bottom,from(#26D),to(#16E));
   border-color: #34A;
@@ -66,12 +46,13 @@ a p.small-text {
   margin: 30px auto;
  }
 
-  .ad-728x90 button {
+ .ad-728x90 .button {
     float: right;
-    margin: 10px 0 0 30px;
+    margin: 10px 10px 0 30px;
   }
 
- a button img {
+ div .button img {
   height: 90%;
+  margin-left: 45px;
  }
 
